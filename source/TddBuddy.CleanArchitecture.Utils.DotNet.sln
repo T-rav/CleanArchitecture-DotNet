@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Utils", "CleanArchitecture.Utils\CleanArchitecture.Utils.csproj", "{6E2F77F9-670E-478D-B20B-3527432F5A7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBuddy.CleanArchitecture.Utils", "TddBuddy.CleanArchitecture.Utils\TddBuddy.CleanArchitecture.Utils.csproj", "{6E2F77F9-670E-478D-B20B-3527432F5A7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Utils.Tests", "CleanArchitecture.Utils.Tests\CleanArchitecture.Utils.Tests.csproj", "{63261527-1BF5-4A4F-9467-645FD6B2CEE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBuddy.CleanArchitecture.Utils.Tests", "TddBuddy.CleanArchitecture.Utils.Tests\TddBuddy.CleanArchitecture.Utils.Tests.csproj", "{63261527-1BF5-4A4F-9467-645FD6B2CEE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

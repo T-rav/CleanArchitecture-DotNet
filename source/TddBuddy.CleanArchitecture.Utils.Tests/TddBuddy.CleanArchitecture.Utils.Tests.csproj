@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Presenters\DownloadFilePresenterTests.cs" />
     <Compile Include="Presenters\ErrorRestfulPresenterTests.cs" />
+    <Compile Include="Presenters\PropertyPresenterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Presenters\SuccessOrErrorRestfulPresenterTests.cs" />
     <Compile Include="TOs\ErrorOutputToTests.cs" />
@@ -71,9 +72,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitecture.Utils\CleanArchitecture.Utils.csproj">
+    <ProjectReference Include="..\TddBuddy.CleanArchitecture.Utils\TddBuddy.CleanArchitecture.Utils.csproj">
       <Project>{6E2F77F9-670E-478D-B20B-3527432F5A7F}</Project>
-      <Name>CleanArchitecture.Utils</Name>
+      <Name>TddBuddy.CleanArchitecture.Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
