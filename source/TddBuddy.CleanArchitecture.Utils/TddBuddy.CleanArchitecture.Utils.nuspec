@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TddBuddy.CleanArchitecture.Utils.DotNet</id>
+    <version>0.9.0</version>
+    <title>Clean Architecture Utils - DotNet</title>
+    <authors>TddBuddy</authors>
+    <owners>StoneAge Technologies</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>https://PROJECT_URL_HERE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A set of .net utilities to make it simple to implement the clean architecture. Mainly file, error and JSON object presenters.</description>
+    <releaseNotes>Inital Release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>CleanArchitecture</tags>
+  </metadata>
+</package>

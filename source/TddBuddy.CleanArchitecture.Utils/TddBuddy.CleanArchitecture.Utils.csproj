@@ -7,8 +7,8 @@
     <ProjectGuid>{6E2F77F9-670E-478D-B20B-3527432F5A7F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CleanArchitecture.Utils</RootNamespace>
-    <AssemblyName>CleanArchitecture.Utils</AssemblyName>
+    <RootNamespace>TddBuddy.CleanArchitecture.Utils</RootNamespace>
+    <AssemblyName>TddBuddy.CleanArchitecture.Utils</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

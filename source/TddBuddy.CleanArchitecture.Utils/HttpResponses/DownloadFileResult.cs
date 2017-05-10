@@ -4,9 +4,9 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
-using CleanArchitecture.Utils.Output;
+using TddBuddy.CleanArchitecture.Utils.Output;
 
-namespace CleanArchitecture.Utils.HttpResponses
+namespace TddBuddy.CleanArchitecture.Utils.HttpResponses
 {
     public class DownloadFileResult : IHttpActionResult
     {

@@ -5,7 +5,7 @@ using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Web.Http.Results;
 
-namespace CleanArchitecture.Utils.HttpResponses
+namespace TddBuddy.CleanArchitecture.Utils.HttpResponses
 {
     public class UnprocessasbleEntityResult<T> : NegotiatedContentResult<T>
     {

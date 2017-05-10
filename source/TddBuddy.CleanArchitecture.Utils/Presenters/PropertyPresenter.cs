@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Utils.Output;
+﻿using TddBuddy.CleanArchitecture.Utils.Output;
 
-namespace CleanArchitecture.Utils.Presenters
+namespace TddBuddy.CleanArchitecture.Utils.Presenters
 {
     public class PropertyPresenter<TSuccess, TError> : IRespondWithSuccessOrError<TSuccess, TError>
     {

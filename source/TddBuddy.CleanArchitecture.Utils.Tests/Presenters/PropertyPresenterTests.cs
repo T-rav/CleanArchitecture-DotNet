@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Utils.Presenters;
-using CleanArchitecture.Utils.TOs;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using TddBuddy.CleanArchitecture.Utils.Presenters;
+using TddBuddy.CleanArchitecture.Utils.TOs;
 
-namespace Tddbuddy.CleanArchitecture.Utils.Tests.Presenters
+namespace TddBuddy.CleanArchitecture.Utils.Tests.Presenters
 {
     [TestFixture]
     public class PropertyPresenterTests

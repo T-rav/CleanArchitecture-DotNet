@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Web.Http;
 using System.Web.Http.Results;
-using CleanArchitecture.Utils.HttpResponses;
+using TddBuddy.CleanArchitecture.Utils.HttpResponses;
 
-namespace CleanArchitecture.Utils.Presenters
+namespace TddBuddy.CleanArchitecture.Utils.Presenters
 {
     public class GenericRestfulPresenter<TOkContent, TUnprocessableEntity>
         where TOkContent : class

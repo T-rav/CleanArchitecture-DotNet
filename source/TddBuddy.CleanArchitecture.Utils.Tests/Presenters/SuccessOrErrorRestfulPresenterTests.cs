@@ -1,12 +1,12 @@
 ﻿using System.Web.Http;
 using System.Web.Http.Results;
-using CleanArchitecture.Utils.HttpResponses;
-using CleanArchitecture.Utils.Presenters;
-using CleanArchitecture.Utils.TOs;
 using NSubstitute;
 using NUnit.Framework;
+using TddBuddy.CleanArchitecture.Utils.HttpResponses;
+using TddBuddy.CleanArchitecture.Utils.Presenters;
+using TddBuddy.CleanArchitecture.Utils.TOs;
 
-namespace CleanArchitecture.Utils.Tests.Presenters
+namespace TddBuddy.CleanArchitecture.Utils.Tests.Presenters
 {
     [TestFixture]
     public class SuccessOrErrorRestfulPresenterTests

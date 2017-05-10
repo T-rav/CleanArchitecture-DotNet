@@ -2,7 +2,7 @@
 using System.Linq;
 using Newtonsoft.Json;
 
-namespace CleanArchitecture.Utils.TOs
+namespace TddBuddy.CleanArchitecture.Utils.TOs
 {
     public class ErrorOutputTo
     {
