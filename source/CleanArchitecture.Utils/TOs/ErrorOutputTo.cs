@@ -6,19 +6,24 @@ namespace CleanArchitecture.Utils.TOs
 {
     public class ErrorOutputTo
     {
+        [JsonIgnore]
+        public bool HasErrors => _errors.Any();
+
+        private readonly List<string> _errors;
+
         public ErrorOutputTo()
         {
-            Errors = new List<string>();
+            _errors = new List<string>();
         }
-
-        public List<string> Errors { get; set; }
-
-        [JsonIgnore]
-        public bool HasErrors => Errors.Any();
 
         public void AddError(string error)
         {
-            Errors.Add(error);
+            _errors.Add(error);
+        }
+
+        public List<string> FetchErrors()
+        {
+            return _errors;
         }
     }
 }
