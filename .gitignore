@@ -5,3 +5,4 @@
 **/bin/*
 **/bin/**/*.pdb
 source/.vs/**/.suo
+**/*.nupkg
