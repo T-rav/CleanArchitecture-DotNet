@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TddBuddy.CleanArchitecture.Utils.DotNet</id>
-    <version>0.9.1</version>
+    <version>0.9.2</version>
     <title>Clean Architecture Utils - DotNet</title>
     <authors>TddBuddy</authors>
     <owners>StoneAge Technologies</owners>
