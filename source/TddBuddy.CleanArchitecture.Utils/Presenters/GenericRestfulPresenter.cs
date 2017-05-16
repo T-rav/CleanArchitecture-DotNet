@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Web.Http;
 using System.Web.Http.Results;
 using TddBuddy.CleanArchitecture.Utils.HttpResponses;
@@ -40,12 +41,6 @@ namespace TddBuddy.CleanArchitecture.Utils.Presenters
         public void RespondWithUnprocessableEntity(TUnprocessableEntity content)
         {
             _unprocessableEntityContent = content;
-        }
-
-        public void ClearResponse()
-        {
-            _okContent = null;
-            _unprocessableEntityContent = null;
         }
 
         public IHttpActionResult Render()

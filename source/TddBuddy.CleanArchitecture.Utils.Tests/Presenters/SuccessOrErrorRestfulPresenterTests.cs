@@ -30,6 +30,8 @@ namespace TddBuddy.CleanArchitecture.Utils.Tests.Presenters
         {
             //---------------Set up test pack-------------------
             var content = new ErrorOutputTo();
+            content.AddError("Error message");
+
             var presenter = CreatePresenter();
             presenter.Respond(content);
             //---------------Execute Test ----------------------

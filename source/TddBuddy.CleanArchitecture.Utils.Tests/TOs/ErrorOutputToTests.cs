@@ -13,7 +13,7 @@ namespace TddBuddy.CleanArchitecture.Utils.Tests.TOs
             //---------------Execute Test ----------------------
             var result = new ErrorOutputTo();
             //---------------Test Result -----------------------
-            Assert.NotNull(result.FetchErrors());
+            Assert.NotNull(result.Errors);
         }
 
         [Test]

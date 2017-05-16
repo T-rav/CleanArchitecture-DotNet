@@ -7,23 +7,23 @@ namespace TddBuddy.CleanArchitecture.Utils.TOs
     public class ErrorOutputTo
     {
         [JsonIgnore]
-        public bool HasErrors => _errors.Any();
+        public bool HasErrors => Errors.Any();
 
-        private readonly List<string> _errors;
+        public List<string> Errors { get; }
 
         public ErrorOutputTo()
         {
-            _errors = new List<string>();
+            Errors = new List<string>();
         }
 
         public void AddError(string error)
         {
-            _errors.Add(error);
+            Errors.Add(error);
         }
 
-        public List<string> FetchErrors()
+        public void AddErrors(List<string> errors)
         {
-            return _errors;
+            Errors.AddRange(errors);
         }
     }
 }
