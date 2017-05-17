@@ -1,6 +1,6 @@
 ﻿using TddBuddy.CleanArchitecture.Domain.Output;
 
-namespace TddBuddy.CleanArchitecture.Presenters
+namespace TddBuddy.CleanArchitecture.Domain.Presenter
 {
     public class PropertyPresenter<TSuccess, TError> : IRespondWithSuccessOrError<TSuccess, TError>
     {
