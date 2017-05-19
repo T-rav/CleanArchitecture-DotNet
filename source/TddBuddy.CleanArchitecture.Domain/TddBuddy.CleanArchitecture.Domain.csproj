@@ -39,6 +39,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAction.cs" />
+    <Compile Include="IUseCase.cs" />
     <Compile Include="Output\IFileOutput.cs" />
     <Compile Include="Output\IRespondWith.cs" />
     <Compile Include="Output\IRespondWithSuccessOrError.cs" />

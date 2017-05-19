@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TddBuddy.CleanArchitecture.Domain.DotNet</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>Clean Architecture Domain - DotNet</title>
     <authors>TddBuddy</authors>
     <owners>StoneAge Technologies</owners>
@@ -11,7 +11,7 @@
     <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A set interfaces and Tos critical to the Clean Architecture</description>
-    <releaseNotes>Fixed namespacing issue</releaseNotes>
+    <releaseNotes>Added IUseCase and IAction interfaces</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>CleanArchitecture</tags>
   </metadata>

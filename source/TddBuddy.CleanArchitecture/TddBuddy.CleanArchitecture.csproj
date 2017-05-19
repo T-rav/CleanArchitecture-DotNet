@@ -46,6 +46,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http" />
+    <Reference Include="TddBuddy.CleanArchitecture.Domain, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TddBuddy.CleanArchitecture.Domain.DotNet.1.0.3\lib\net461\TddBuddy.CleanArchitecture.Domain.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HttpResponses\DownloadFileResult.cs" />
@@ -60,12 +64,6 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TddBuddy.CleanArchitecture.Domain\TddBuddy.CleanArchitecture.Domain.csproj">
-      <Project>{8ab3aa2e-936a-47eb-ad48-294d46d9a4cf}</Project>
-      <Name>TddBuddy.CleanArchitecture.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- Full Clean -->
