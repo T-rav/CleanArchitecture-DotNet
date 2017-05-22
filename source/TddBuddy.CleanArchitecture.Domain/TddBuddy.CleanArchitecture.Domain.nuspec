@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TddBuddy.CleanArchitecture.Domain.DotNet</id>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <title>Clean Architecture Domain - DotNet</title>
     <authors>TddBuddy</authors>
     <owners>StoneAge Technologies</owners>

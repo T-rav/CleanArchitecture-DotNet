@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CleanArchitecture.Utils")]
+[assembly: AssemblyTitle("CleanArchitecture")]
 [assembly: AssemblyDescription("A set of .net utilities to make it simple to implement the clean architecture. Mainly file, error and JSON object presenters.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("StoneAge Technologies")]
-[assembly: AssemblyProduct("CleanArchitecture.Utils")]
+[assembly: AssemblyProduct("CleanArchitecture")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.4.0")]
-[assembly: AssemblyFileVersion("1.0.4.0")]
+[assembly: AssemblyVersion("1.0.5.0")]
+[assembly: AssemblyFileVersion("1.0.5.0")]
