@@ -52,7 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HttpResponses\BadRequestEntityResult.cs" />
+    <Compile Include="HttpResponses\BadRequestResult.cs" />
     <Compile Include="HttpResponses\DownloadFileResult.cs" />
     <Compile Include="HttpResponses\ForbiddenEntityResult.cs" />
     <Compile Include="HttpResponses\UnprocessasbleEntityResult.cs" />
