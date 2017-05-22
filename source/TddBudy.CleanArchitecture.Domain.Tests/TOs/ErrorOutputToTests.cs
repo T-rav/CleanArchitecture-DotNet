@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using TddBuddy.CleanArchitecture.Domain.TOs;
 
-namespace TddBuddy.CleanArchitecture.Tests.TOs
+namespace TddBudy.CleanArchitecture.Domain.Tests.TOs
 {
     [TestFixture]
     public class ErrorOutputToTests

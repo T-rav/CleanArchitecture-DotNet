@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBuddy.CleanArchitecture.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBuddy.CleanArchitecture.Domain", "TddBuddy.CleanArchitecture.Domain\TddBuddy.CleanArchitecture.Domain.csproj", "{8AB3AA2E-936A-47EB-AD48-294D46D9A4CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBudy.CleanArchitecture.Domain.Tests", "TddBudy.CleanArchitecture.Domain.Tests\TddBudy.CleanArchitecture.Domain.Tests.csproj", "{711DDBAB-4205-4B55-840D-9140CFD09046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8AB3AA2E-936A-47EB-AD48-294D46D9A4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AB3AA2E-936A-47EB-AD48-294D46D9A4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AB3AA2E-936A-47EB-AD48-294D46D9A4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711DDBAB-4205-4B55-840D-9140CFD09046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711DDBAB-4205-4B55-840D-9140CFD09046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711DDBAB-4205-4B55-840D-9140CFD09046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711DDBAB-4205-4B55-840D-9140CFD09046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

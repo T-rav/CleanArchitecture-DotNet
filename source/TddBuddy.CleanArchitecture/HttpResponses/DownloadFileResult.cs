@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
@@ -14,6 +15,11 @@ namespace TddBuddy.CleanArchitecture.HttpResponses
 
         public DownloadFileResult(IFileOutput fileOutput)
         {
+            if (fileOutput == null)
+            {
+                throw new ArgumentNullException(nameof(fileOutput));
+            }
+
             FileOutput = fileOutput;
         }
 

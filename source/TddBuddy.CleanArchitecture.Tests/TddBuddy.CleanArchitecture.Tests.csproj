@@ -61,12 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HttpResponses\DownloadFileResultTests.cs" />
     <Compile Include="Presenters\DownloadFilePresenterTests.cs" />
     <Compile Include="Presenters\ErrorRestfulPresenterTests.cs" />
     <Compile Include="Presenters\PropertyPresenterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Presenters\SuccessOrErrorRestfulPresenterTests.cs" />
-    <Compile Include="TOs\ErrorOutputToTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -74,7 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TddBuddy.CleanArchitecture.Domain\TddBuddy.CleanArchitecture.Domain.csproj">
-      <Project>{8AB3AA2E-936A-47EB-AD48-294D46D9A4CF}</Project>
+      <Project>{8ab3aa2e-936a-47eb-ad48-294d46d9a4cf}</Project>
       <Name>TddBuddy.CleanArchitecture.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\TddBuddy.CleanArchitecture\TddBuddy.CleanArchitecture.csproj">
