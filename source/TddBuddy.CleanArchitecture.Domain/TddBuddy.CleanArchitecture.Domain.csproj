@@ -39,7 +39,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IActionAsync.cs" />
     <Compile Include="IAction.cs" />
+    <Compile Include="IUseCaseAsync.cs" />
     <Compile Include="IUseCase.cs" />
     <Compile Include="Output\IFileOutput.cs" />
     <Compile Include="Output\IRespondWith.cs" />
