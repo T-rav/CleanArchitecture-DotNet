@@ -7,7 +7,7 @@
     <authors>TddBuddy</authors>
     <owners>StoneAge Technologies</owners>
     <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>https://PROJECT_URL_HERE</projectUrl>
+    <projectUrl>https://github.com/T-rav/CleanArchitecture-DotNet</projectUrl>
     <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A set interfaces and Tos critical to the Clean Architecture</description>
