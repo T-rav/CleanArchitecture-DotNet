@@ -4,7 +4,7 @@ using TddBuddy.CleanArchitecture.Domain.Messages;
 namespace TddBudy.CleanArchitecture.Domain.Tests.TOs
 {
     [TestFixture]
-    public class ErrorOutputToTests
+    public class ErrorOutputMessageTests
     {
         [Test]
         public void FetchErrors_WhenConstructed_ShouldReturnList()

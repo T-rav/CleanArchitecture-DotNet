@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="Presenter\PropertyPresenterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TOs\ErrorOutputToTests.cs" />
+    <Compile Include="TOs\ErrorOutputMessageTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TddBuddy.CleanArchitecture.Domain\TddBuddy.CleanArchitecture.Domain.csproj">
