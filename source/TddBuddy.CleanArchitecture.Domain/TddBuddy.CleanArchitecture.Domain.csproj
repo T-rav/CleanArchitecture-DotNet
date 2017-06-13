@@ -48,8 +48,8 @@
     <Compile Include="Output\IRespondWithSuccessOrError.cs" />
     <Compile Include="Presenter\PropertyPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TOs\ErrorOutputTo.cs" />
-    <Compile Include="TOs\InMemoryFileOutputTo.cs" />
+    <Compile Include="Messages\ErrorOutputMessage.cs" />
+    <Compile Include="Messages\InMemoryFileOutputMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

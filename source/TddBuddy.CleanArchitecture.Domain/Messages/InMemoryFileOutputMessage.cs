@@ -1,14 +1,14 @@
 using System.IO;
 using TddBuddy.CleanArchitecture.Domain.Output;
 
-namespace TddBuddy.CleanArchitecture.Domain.TOs
+namespace TddBuddy.CleanArchitecture.Domain.Messages
 {
-    public class InMemoryFileOutputTo : IFileOutput
+    public class InMemoryFileOutputMessage : IFileOutput
     {
         private readonly byte[] _fileData;
         public string FileName { get; }
 
-        public InMemoryFileOutputTo(string fileName, byte[] fileData)
+        public InMemoryFileOutputMessage(string fileName, byte[] fileData)
         {
             _fileData = fileData;
             FileName = fileName;

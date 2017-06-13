@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
+using TddBuddy.CleanArchitecture.Domain.Messages;
 using TddBuddy.CleanArchitecture.Domain.Presenter;
-using TddBuddy.CleanArchitecture.Domain.TOs;
 
 namespace TddBudy.CleanArchitecture.Domain.Tests.Presenter
 {
@@ -12,7 +12,7 @@ namespace TddBudy.CleanArchitecture.Domain.Tests.Presenter
         {
             //---------------Set up test pack-------------------
             var successObject = "all good";
-            var presenter = new PropertyPresenter<string, ErrorOutputTo>();
+            var presenter = new PropertyPresenter<string, ErrorOutputMessage>();
             //---------------Execute Test ----------------------
             presenter.Respond(successObject);
             //---------------Test Result -----------------------
@@ -23,9 +23,9 @@ namespace TddBudy.CleanArchitecture.Domain.Tests.Presenter
         public void Respond_WhenErrorObject_ShouldSetErrorProperty()
         {
             //---------------Set up test pack-------------------
-            var errorObject = new ErrorOutputTo();
+            var errorObject = new ErrorOutputMessage();
             errorObject.AddError("stuff went wrong");
-            var presenter = new PropertyPresenter<string, ErrorOutputTo>();
+            var presenter = new PropertyPresenter<string, ErrorOutputMessage>();
             //---------------Execute Test ----------------------
             presenter.Respond(errorObject);
             //---------------Test Result -----------------------
@@ -36,9 +36,9 @@ namespace TddBudy.CleanArchitecture.Domain.Tests.Presenter
         public void IsErrorResponse_WhenErrorObjectNotNull_ShouldReturnTrue()
         {
             //---------------Set up test pack-------------------
-            var errorObject = new ErrorOutputTo();
+            var errorObject = new ErrorOutputMessage();
             errorObject.AddError("stuff went wrong");
-            var presenter = new PropertyPresenter<string, ErrorOutputTo>();
+            var presenter = new PropertyPresenter<string, ErrorOutputMessage>();
             //---------------Execute Test ----------------------
             presenter.Respond(errorObject);
             //---------------Test Result -----------------------
@@ -50,7 +50,7 @@ namespace TddBudy.CleanArchitecture.Domain.Tests.Presenter
         {
             //---------------Set up test pack-------------------
             var successObject = "all good";
-            var presenter = new PropertyPresenter<string, ErrorOutputTo>();
+            var presenter = new PropertyPresenter<string, ErrorOutputMessage>();
             //---------------Execute Test ----------------------
             presenter.Respond(successObject);
             //---------------Test Result -----------------------

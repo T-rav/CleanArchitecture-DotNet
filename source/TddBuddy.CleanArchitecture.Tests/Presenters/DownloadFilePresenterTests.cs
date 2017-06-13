@@ -2,8 +2,8 @@
 using System.Web.Http;
 using NSubstitute;
 using NUnit.Framework;
+using TddBuddy.CleanArchitecture.Domain.Messages;
 using TddBuddy.CleanArchitecture.Domain.Output;
-using TddBuddy.CleanArchitecture.Domain.TOs;
 using TddBuddy.CleanArchitecture.HttpResponses;
 using TddBuddy.CleanArchitecture.Presenters;
 
@@ -36,7 +36,7 @@ namespace TddBuddy.CleanArchitecture.Tests.Presenters
             var presenter = CreatePresenter();
             presenter.Respond(errorOutput);
             //---------------Execute Test ----------------------
-            var result = presenter.Render() as UnprocessasbleEntityResult<ErrorOutputTo>;
+            var result = presenter.Render() as UnprocessasbleEntityResult<ErrorOutputMessage>;
             //---------------Test Result -----------------------
             Assert.IsNotNull(result);
             Assert.AreEqual(errorOutput, result.Content);
@@ -69,9 +69,9 @@ namespace TddBuddy.CleanArchitecture.Tests.Presenters
             Assert.AreEqual("No response specified", exception.Message);
         }
 
-        private ErrorOutputTo CreateErrorResult()
+        private ErrorOutputMessage CreateErrorResult()
         {
-            return new ErrorOutputTo();
+            return new ErrorOutputMessage();
         }
 
         private IFileOutput CreateFileResult()

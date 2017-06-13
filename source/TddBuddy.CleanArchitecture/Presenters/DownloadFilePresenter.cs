@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Web.Http;
+using TddBuddy.CleanArchitecture.Domain.Messages;
 using TddBuddy.CleanArchitecture.Domain.Output;
-using TddBuddy.CleanArchitecture.Domain.TOs;
 using TddBuddy.CleanArchitecture.HttpResponses;
 
 namespace TddBuddy.CleanArchitecture.Presenters
 {
-    public class DownloadFilePresenter : IRespondWithSuccessOrError<IFileOutput, ErrorOutputTo>, IRespondWith<IFileOutput>
+    public class DownloadFilePresenter : IRespondWithSuccessOrError<IFileOutput, ErrorOutputMessage>, IRespondWith<IFileOutput>
     {
         private readonly ApiController _controller;
         private IFileOutput _fileContent;
-        private ErrorOutputTo _errorContent;
+        private ErrorOutputMessage _errorContent;
 
         public DownloadFilePresenter(ApiController controller)
         {
@@ -22,7 +22,7 @@ namespace TddBuddy.CleanArchitecture.Presenters
             _fileContent = fileOutput;
         }
 
-        public void Respond(ErrorOutputTo output)
+        public void Respond(ErrorOutputMessage output)
         {
             _errorContent = output;
         }
@@ -41,7 +41,7 @@ namespace TddBuddy.CleanArchitecture.Presenters
 
             if (IsErrorResponse())
             {
-                return new UnprocessasbleEntityResult<ErrorOutputTo>(_errorContent, _controller);
+                return new UnprocessasbleEntityResult<ErrorOutputMessage>(_errorContent, _controller);
             }
 
             return new DownloadFileResult(_fileContent);

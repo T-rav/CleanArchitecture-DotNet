@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using TddBuddy.CleanArchitecture.Domain.TOs;
+using TddBuddy.CleanArchitecture.Domain.Messages;
 
 namespace TddBudy.CleanArchitecture.Domain.Tests.TOs
 {
@@ -11,7 +11,7 @@ namespace TddBudy.CleanArchitecture.Domain.Tests.TOs
         {
             //---------------Set up test pack-------------------
             //---------------Execute Test ----------------------
-            var result = new ErrorOutputTo();
+            var result = new ErrorOutputMessage();
             //---------------Test Result -----------------------
             Assert.NotNull(result.Errors);
         }
@@ -20,7 +20,7 @@ namespace TddBudy.CleanArchitecture.Domain.Tests.TOs
         public void HasErrors_WhenNoErrors_ShouldReturnFalse()
         {
             //---------------Set up test pack-------------------
-            var errorOutputTo = new ErrorOutputTo();
+            var errorOutputTo = new ErrorOutputMessage();
             //---------------Execute Test ----------------------
             var result = errorOutputTo.HasErrors;
             //---------------Test Result -----------------------
@@ -31,7 +31,7 @@ namespace TddBudy.CleanArchitecture.Domain.Tests.TOs
         public void HasErrors_WhenErrors_ShouldReturnTrue()
         {
             //---------------Set up test pack-------------------
-            var errorOutputTo = new ErrorOutputTo();
+            var errorOutputTo = new ErrorOutputMessage();
             errorOutputTo.AddError("test error");
             //---------------Execute Test ----------------------
             var result = errorOutputTo.HasErrors;
