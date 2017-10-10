@@ -7,6 +7,7 @@
     <authors>TddBuddy</authors>
     <owners>StoneAge Technologies</owners>
     <projectUrl>https://github.com/T-rav/CleanArchitecture-DotNet</projectUrl>
+	<iconUrl>http://www.horn-it.com/wp-content/uploads/2016/11/Layers.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A set of .net utilities to make it simple to implement the clean architecture. Mainly file, error and JSON object presenters.</description>
     <releaseNotes>Added ResultFreeSuccessOrErrorRestfulPresenter and removed result less Render() on SuccessOrErrorRestfulPresenter</releaseNotes>

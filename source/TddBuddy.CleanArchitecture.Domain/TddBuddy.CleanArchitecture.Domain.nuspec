@@ -7,6 +7,7 @@
     <authors>TddBuddy</authors>
     <owners>StoneAge Technologies</owners>
     <projectUrl>https://github.com/T-rav/CleanArchitecture-DotNet</projectUrl>
+	<iconUrl>http://labs.blogs.com/.a/6a00d8341caed853ef0148c74de2c4970c-pi</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A set interfaces and messages critical to the Clean Architecture</description>
     <releaseNotes>Added IResultFreeAction and IResultFreeActionAsync interfaces</releaseNotes>
