@@ -3,8 +3,8 @@ using TddBuddy.CleanArchitecture.Domain.Output;
 
 namespace TddBuddy.CleanArchitecture.Domain
 {
-    public interface IAction<IItOutputTo>
+    public interface IAction<out TItOutputTo>
     {
-        void Execute(IRespondWithSuccessOrError<IItOutputTo, ErrorOutputMessage> presenter);
+        void Execute(IRespondWithSuccessOrError<TItOutputTo, ErrorOutputMessage> presenter);
     }
 }

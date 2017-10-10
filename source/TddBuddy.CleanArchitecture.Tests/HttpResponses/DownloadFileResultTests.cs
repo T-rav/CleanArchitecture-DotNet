@@ -24,7 +24,6 @@ namespace TddBuddy.CleanArchitecture.Tests.HttpResponses
         public void Ctor_WhenNotNullIFileOutput_ShouldNotThrowException()
         {
             //---------------Set up test pack-------------------
-            var expected = "fileOutput";
             var input = Substitute.For<IFileOutput>();
             //---------------Execute Test ----------------------
             //---------------Test Result -----------------------

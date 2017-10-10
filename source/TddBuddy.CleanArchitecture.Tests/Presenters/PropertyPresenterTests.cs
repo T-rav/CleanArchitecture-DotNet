@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using TddBuddy.CleanArchitecture.Domain.Messages;
 using TddBuddy.CleanArchitecture.Domain.Presenter;
-using TddBuddy.CleanArchitecture.Presenters;
 
 namespace TddBuddy.CleanArchitecture.Tests.Presenters
 {

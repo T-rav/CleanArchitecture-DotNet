@@ -1,5 +1,5 @@
-﻿using System.Web.Http;
-using System.Web.Http.Results;
+﻿using System;
+using System.Web.Http;
 using NSubstitute;
 using NUnit.Framework;
 using TddBuddy.CleanArchitecture.Domain.Messages;
@@ -12,14 +12,13 @@ namespace TddBuddy.CleanArchitecture.Tests.Presenters
     public class ErrorRestfulPresenterTests
     {
         [Test]
-        public void Render_GivenNoResponse_ShouldReturnOkResult()
+        public void Render_GivenNoResponse_ShouldThrowInvalidOperationException()
         {
             //---------------Set up test pack-------------------
             var presenter = CreatePresenter();
             //---------------Execute Test ----------------------
-            var result = presenter.Render() as OkResult;
             //---------------Test Result -----------------------
-            Assert.IsNotNull(result);
+            Assert.Throws<InvalidOperationException>(() =>presenter.Render());
         }
 
         [Test]
