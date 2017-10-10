@@ -5,13 +5,11 @@ using TddBuddy.CleanArchitecture.HttpResponses;
 
 namespace TddBuddy.CleanArchitecture.Presenters
 {
-    public class SuccessOrErrorRestfulPresenter<TSuccess, TError> : GenericRestfulPresenter, IRespondWithSuccessOrError<TSuccess, TError>
-        where TSuccess : class
-        where TError : class
+    public class ResultFreeSuccessOrErrorRestfulPresenter<TError> : GenericRestfulPresenter, IRespondWithNoResultSuccessOrError<TError>
     {
         private readonly ApiController _controller;
 
-        public SuccessOrErrorRestfulPresenter(ApiController controller)
+        public ResultFreeSuccessOrErrorRestfulPresenter(ApiController controller)
         {
             _controller = controller;
         }
@@ -21,9 +19,10 @@ namespace TddBuddy.CleanArchitecture.Presenters
             RespondWith(new UnprocessasbleEntityResult<TError>(output, _controller));
         }
 
-        public void Respond(TSuccess output)
+        public void Respond()
         {
-            RespondWith(new OkNegotiatedContentResult<TSuccess>(output, _controller));
+            RespondWith(new OkResult(_controller));
         }
+
     }
 }

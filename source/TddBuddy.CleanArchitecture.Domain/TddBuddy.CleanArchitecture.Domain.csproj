@@ -39,13 +39,15 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IResultFreeActionAsync.cs" />
+    <Compile Include="IResultFreeAction.cs" />
     <Compile Include="IActionAsync.cs" />
     <Compile Include="IAction.cs" />
     <Compile Include="IUseCaseAsync.cs" />
     <Compile Include="IUseCase.cs" />
     <Compile Include="Output\IFileOutput.cs" />
     <Compile Include="Output\IRespondWith.cs" />
-    <Compile Include="Output\IRespondWithNoContent.cs" />
+    <Compile Include="Output\IRespondWithNoResultSuccessOrError.cs" />
     <Compile Include="Output\IRespondWithSuccessOrError.cs" />
     <Compile Include="Presenter\PropertyPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -9,20 +9,18 @@ using TddBuddy.CleanArchitecture.Presenters;
 namespace TddBuddy.CleanArchitecture.Tests.Presenters
 {
     [TestFixture]
-    public class SuccessOrErrorRestfulPresenterTests
+    public class ResultFreeSuccessOrErrorRestfulPresenterTests
     {
         [Test]
-        public void Render_GivenSuccessfullResponse_ShouldReturnOkResultWithContent()
+        public void Render_GivenSuccessfullResponse_ShouldReturnOkResult()
         {
             //---------------Set up test pack-------------------
-            var content = new object();
             var presenter = CreatePresenter();
-            presenter.Respond(content);
+            presenter.Respond();
             //---------------Execute Test ----------------------
-            var result = presenter.Render() as OkNegotiatedContentResult<object>;
+            var result = presenter.Render() as OkResult;
             //---------------Test Result -----------------------
             Assert.IsNotNull(result);
-            Assert.AreEqual(content, result.Content);
         }
 
         [Test]
@@ -41,10 +39,10 @@ namespace TddBuddy.CleanArchitecture.Tests.Presenters
             Assert.AreEqual(content, result.Content);
         }
 
-        private SuccessOrErrorRestfulPresenter<object, ErrorOutputMessage> CreatePresenter()
+        private ResultFreeSuccessOrErrorRestfulPresenter<ErrorOutputMessage> CreatePresenter()
         {
             var apiController = Substitute.For<ApiController>();
-            return new SuccessOrErrorRestfulPresenter<object, ErrorOutputMessage>(apiController);
+            return new ResultFreeSuccessOrErrorRestfulPresenter<ErrorOutputMessage>(apiController);
         }
     }
 }

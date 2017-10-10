@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>TddBuddy.CleanArchitecture.DotNet</id>
-    <version>2.5.0</version>
+    <version>3.0.0</version>
     <title>Clean Architecture - DotNet</title>
     <authors>TddBuddy</authors>
     <owners>StoneAge Technologies</owners>
     <projectUrl>https://github.com/T-rav/CleanArchitecture-DotNet</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A set of .net utilities to make it simple to implement the clean architecture. Mainly file, error and JSON object presenters.</description>
-    <releaseNotes>Removed a lot of coupling from the GenericRestfulPresenter, some minor breaking changes.</releaseNotes>
+    <releaseNotes>Added ResultFreeSuccessOrErrorRestfulPresenter and removed result less Render() on SuccessOrErrorRestfulPresenter</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>CleanArchitecture</tags>
   </metadata>
