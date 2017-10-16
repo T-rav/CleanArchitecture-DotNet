@@ -4,8 +4,8 @@ using TddBuddy.CleanArchitecture.Domain.Output;
 
 namespace TddBuddy.CleanArchitecture.Domain
 {
-    public interface IResultFreeActionAsync
+    public interface IResultFreeActionAsync<TInputTo>
     {
-        Task Execute(IRespondWithNoResultSuccessOrError<ErrorOutputMessage> presenter);
+        Task Execute(TInputTo inputTo, IRespondWithNoResultSuccessOrError<ErrorOutputMessage> presenter);
     }
 }

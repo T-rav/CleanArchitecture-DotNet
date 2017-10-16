@@ -3,8 +3,8 @@ using TddBuddy.CleanArchitecture.Domain.Output;
 
 namespace TddBuddy.CleanArchitecture.Domain
 {
-    public interface IResultFreeAction
+    public interface IResultFreeAction<TInputTo>
     {
-        void Execute(IRespondWithNoResultSuccessOrError<ErrorOutputMessage> presenter);
+        void Execute(TInputTo inputTo, IRespondWithNoResultSuccessOrError<ErrorOutputMessage> presenter);
     }
 }
