@@ -49,6 +49,7 @@
     <Compile Include="Output\IRespondWith.cs" />
     <Compile Include="Output\IRespondWithNoResultSuccessOrError.cs" />
     <Compile Include="Output\IRespondWithSuccessOrError.cs" />
+    <Compile Include="Presenter\ResultFreePropertyPresenter.cs" />
     <Compile Include="Presenter\PropertyPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Messages\ErrorOutputMessage.cs" />
