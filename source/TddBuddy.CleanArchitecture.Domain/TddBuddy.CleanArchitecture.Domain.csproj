@@ -47,6 +47,7 @@
     <Compile Include="IUseCase.cs" />
     <Compile Include="Output\IFileOutput.cs" />
     <Compile Include="Output\IRespondWith.cs" />
+    <Compile Include="Output\IRespondWithResultFreeSuccessOrError.cs" />
     <Compile Include="Output\IRespondWithNoResultSuccessOrError.cs" />
     <Compile Include="Output\IRespondWithSuccessOrError.cs" />
     <Compile Include="Presenter\ResultFreePropertyPresenter.cs" />

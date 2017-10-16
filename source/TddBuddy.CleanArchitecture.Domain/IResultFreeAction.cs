@@ -5,6 +5,6 @@ namespace TddBuddy.CleanArchitecture.Domain
 {
     public interface IResultFreeAction<TInputTo>
     {
-        void Execute(TInputTo inputTo, IRespondWithNoResultSuccessOrError<ErrorOutputMessage> presenter);
+        void Execute(TInputTo inputTo, IRespondWithResultFreeSuccessOrError<ErrorOutputMessage> presenter);
     }
 }

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TddBuddy.CleanArchitecture.Domain.DotNet</id>
-    <version>3.1.1</version>
+    <version>3.1.3</version>
     <title>Clean Architecture Domain - DotNet</title>
     <authors>TddBuddy</authors>
     <owners>StoneAge Technologies</owners>
@@ -10,7 +10,7 @@
 	<iconUrl>http://labs.blogs.com/.a/6a00d8341caed853ef0148c74de2c4970c-pi</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A set interfaces and messages critical to the Clean Architecture</description>
-    <releaseNotes>Fixed issue with IResultFreeAction where it would not take input data</releaseNotes>
+    <releaseNotes>Added IRespondWithResultFreeSuccessOrError to replace IRespondWithNoResultSuccessOrError</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>CleanArchitecture</tags>
   </metadata>

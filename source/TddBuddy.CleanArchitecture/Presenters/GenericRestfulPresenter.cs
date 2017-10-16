@@ -3,7 +3,7 @@ using System.Web.Http;
 
 namespace TddBuddy.CleanArchitecture.Presenters
 {
-    public class GenericRestfulPresenter
+    public class GenericRestfulPresenter 
     {
         private IHttpActionResult _response;
 

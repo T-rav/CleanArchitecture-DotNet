@@ -6,6 +6,6 @@ namespace TddBuddy.CleanArchitecture.Domain
 {
     public interface IResultFreeActionAsync<TInputTo>
     {
-        Task Execute(TInputTo inputTo, IRespondWithNoResultSuccessOrError<ErrorOutputMessage> presenter);
+        Task Execute(TInputTo inputTo, IRespondWithResultFreeSuccessOrError<ErrorOutputMessage> presenter);
     }
 }
