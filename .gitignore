@@ -6,3 +6,4 @@
 **/bin/**/*.pdb
 source/.vs/**/.suo
 **/*.nupkg
+**/storage.ide
